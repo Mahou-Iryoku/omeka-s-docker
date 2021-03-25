@@ -22,7 +22,7 @@ services:
     networks:
       - network1 
     ports:
-      - "8081:80"
+      - "80:80"
     links:
       - mariadb:db
 
@@ -34,7 +34,7 @@ services:
     networks:
       - network1 
     ports:
-      - "80:80"
+      - "8081:80"
     links:
       - mariadb:db
     volumes:
